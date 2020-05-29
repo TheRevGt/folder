@@ -1,0 +1,190 @@
+:root {
+  --primary-color: rgba(13, 110, 139, 0.65);
+  --overlay-color: rgba(24, 39, 51);
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+html, body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-image: url('https://images.wallpaperscraft.com/image/road_mountains_sun_170836_1600x900.jpg');
+  width: 100%;
+  height: 100%;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  color: #111;
+}
+
+h1 {
+  color: #111;
+  text-align: center;
+  font-weight: 300;
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 650px;
+  height: 450px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+#descption {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  border-radius: 4px;
+}
+
+#descption ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none;
+}
+
+#descption ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 700px;
+  height: auto;
+}
+#descption h2 {
+  text-align: center;
+  padding: 25px 10px 10px 10px;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+
+.showcase {
+  background: var(--primary-color);
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+.showcase2 {
+  background: var(--primary-color);
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+.showcase:before {
+  content: '';
+  background: url('https://images.wallpaperscraft.com/image/road_mountains_sun_170836_1600x900.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.showcase .showcase-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.showcase h1 {
+  font-size: 4rem;
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: #fff;
+  color: #111;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  transition: opacity 1s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+.img{
+  width: 250px;
+  height: 250px;
+  margin-bottom: 10px;
+}
