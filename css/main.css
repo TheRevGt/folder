@@ -188,3 +188,12 @@ a.control_next {
   height: 250px;
   margin-bottom: 10px;
 }
+.resum{
+  float: right;
+  width: 300px;
+  height: 600px;
+  color: #fff;
+  text-align: justify;
+  margin-top: 40px;
+  padding-right: 15px; 
+}
